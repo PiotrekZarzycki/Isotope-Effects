@@ -9,18 +9,25 @@
 ### 1. Recalculating harmonic vibrational frequencies
 Recalculating harmonic vibrational frequencies for different isotopologues using a previously computed numerical Hessian 
 (second derivatives of energy with respect to atomic coordinates) by reading the Hessian from a file and reconstructing the
-mass-weighted Hessian matrix with updated atomic masses and re-diagonalizing it. 
+mass-weighted Hessian matrix with updated atomic masses and re-diagonalizing it.
 
-## Gaussian-formatted checkpoint
+#### Gaussian-formatted checkpoint
 use 
 ```formchk <chk_file>``` 
-to generate formated checkpoint, and then use harmfreq_from_fchk.py to calculate frequencies for given atom masses read from an additional input file (mass for each atom in a separate file) lines, as many as atoms in the system)
+to generate formated checkpoint, and then use harmfreq_from_fchk.py to calculate frequencies for given masses read from an additional input file (provide mass for each atom at separate line), as many as atoms in the system)
 Usage: 
 ``` harmfreq_from_fchk.py <fchk_file> <file_with_masses>```
 example for CO32- molecule in the Examples/Gaussian
 
 ```python harmfreq_from_fchk.py CO3.fchk masses.txt ```
 
+with masses file (`masses.txt`):
+```
+12.00000
+15.99491  
+15.99491  
+15.99491  
+```
 At the end of the output you will see: 
 ```
 ============================================================
