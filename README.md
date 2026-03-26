@@ -14,10 +14,10 @@ mass-weighted Hessian matrix with updated atomic masses and re-diagonalizing it.
 #### Gaussian-formatted checkpoint
 use 
 ```formchk <chk_file>``` 
-to generate formated checkpoint, and then use harmfreq_from_fchk.py to calculate frequencies for given masses read from an additional input file (provide mass for each atom at separate line), as many as atoms in the system)
+to generate formated checkpoint, and then use harmfreq_from_fchk.py to calculate frequencies for given masses read from an additional input file (provide mass for each atom at separate line), for as many atoms as in the system)
 Usage: 
 ``` harmfreq_from_fchk.py <fchk_file> <file_with_masses>```
-example for CO32- molecule in the Examples/Gaussian
+example for CO32- molecule (carbonate anion) in the Examples/Gaussian
 
 ```python harmfreq_from_fchk.py CO3.fchk masses.txt ```
 
@@ -28,7 +28,7 @@ with masses file (`masses.txt`):
 15.99491  
 15.99491  
 ```
-At the end of the output you will see: 
+At the end of the output, you will see: 
 ```
 ============================================================
   Harmonic Vibrational Frequencies
