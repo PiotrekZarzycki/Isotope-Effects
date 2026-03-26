@@ -62,12 +62,6 @@ At the end of the output you will see:
 ```
 
 
-## 2. Diatomics 
-### 2.1. Dunham Analysis of Diatomic Potential Energy Surfaces
-Fits a Dunham polynomial to ab initio Potential Energy Surface (PES) data for diatomic molecule, extracts Dunham Y-parameters,
-converts to spectroscopic constants, computes energy levels for multiple isotopologues
-
-Input files are  PES data file in format R/Å and E/Hartree (two columns) and mass file with lines `label  mass1_amu  mass2_amu`
 
 
 
